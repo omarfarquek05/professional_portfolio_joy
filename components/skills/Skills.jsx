@@ -5,7 +5,7 @@ import { Button } from '../ui/button'
 const Skills = () => {
   return (
     <>
-    <div className='flex mx-auto justify-center py-1'>
+    <div className='flex mx-auto justify-center py-1'  id="skills">
        <h1 className='h1-bold text-transparent bg-clip-text bg-gradient-to-r
        from-blue-500 via-yellow-400 to-indigo-400'> Skills</h1>
     </div>

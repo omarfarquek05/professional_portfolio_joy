@@ -15,7 +15,7 @@ import Image from 'next/image'
 
 const ResourceCard = ({  title, id, image, downloadNumber, downloadLink,  projecturl}) => {
   return (
-    <Card className="w-full max-w-fit border-0 !bg-transparent sm:max-w-[356px]">
+    <Card className="w-full max-w-fit border-0 !bg-transparent sm:max-w-[356px]" id="projects">
       <Link href={downloadLink} target="_blank">
         <CardHeader className="flex justify-center items-center flex-col gap-2.5 !p-0">
           <div className="h-fit w-full">

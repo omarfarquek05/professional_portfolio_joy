@@ -5,7 +5,6 @@ import { useState } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { formUrlQuery } from '@/lib/utils';
 
-
 const links = ['All', 'NextJs', 'Frontend', 'Backend', 'Fullstack']
 
 const Filters = () => {
@@ -43,7 +42,7 @@ const Filters = () => {
           key={link}
           onClick={() => handleFilter(link)}
           className={`${
-            active === link ?"bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500" : ""
+            active === link ? "bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500" : ""
           } whitespace-nowrap rounded-lg px-8 py-2.5 capitalize bg-gradient-to-r from-indigo-600 to-blue-500 text-white`}
         >
           {link}

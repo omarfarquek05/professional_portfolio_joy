@@ -26,6 +26,9 @@ export default {
         name: 'authorImage',
         type: 'image',
         title: 'Author Image',
+        options: {
+          hotspot: true,
+        }
       }, 
       {
         name: 'cvDownloadLink',

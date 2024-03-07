@@ -5,11 +5,15 @@ export const headerLinks = [
   },
   {
     label: "Projects",
-    route: "/",
+    route: "#projects",
   },
   {
-    label: "My Profile",
-    route: "/profile",
+    label: "Skills",
+    route: "#skills",
+  },
+  {
+    label: "Contact",
+    route: "#contact",
   },
 ];
 

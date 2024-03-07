@@ -4,9 +4,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import { PortableText } from "@portabletext/react";
 
 
-const HeroSection = () => {
+const HeroSection = ({ cvDownloadLink,author, title, authorImage, content}) => {
   return (
     <section className="">
       <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
@@ -14,18 +15,14 @@ const HeroSection = () => {
         <div className="flex flex-col justify-center gap-2">
           <h1 className="h1-bold  text-transparent bg-clip-text bg-gradient-to-r
          from-blue-500 via-yellow-400 to-indigo-600 whitespace-nowrap " >
-            Omar Farquek joy
+            {author}
           </h1>
           <p className="p-regular-20 md:p-regular-24 pb-2">
-            Full Stack Web Developer
+           {title}
           </p>
-          <p className="p-regular-10 md:p-regular-15 tracking-normal sm:tracking-wide">
-            A Full Stack Web Developer proficient in MERN stack and Next.js,
-            adept at building dynamic and responsive web applications.
-            Experienced in both front-end and back-end development, with
-            expertise in utilizing MongoDB, Express.js, React.js, Node.js, and
-            Next.js to create seamless and efficient user experiences.
-          </p>
+          <div className="p-regular-10 md:p-regular-15 tracking-normal sm:tracking-wide">
+          <PortableText value={content} />
+          </div>
 
           <div className="flex gap-2"> 
           <Button size="lg" asChild className="button w-full sm:w-fit">
@@ -33,14 +30,14 @@ const HeroSection = () => {
           </Button>
 
           <Button size="lg" asChild className="button w-full sm:w-fit">
-            <Link href="/">Download Resume</Link>
+            <Link href={cvDownloadLink} target="_blank">Download Resume</Link>
           </Button>
           </div>
 
         </div>
 
-        <Image
-          src="/assets/joy.png"
+        <Image priority
+          src={authorImage}
           alt="hero"
           width={1000}
           height={1000}
