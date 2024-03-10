@@ -1,3 +1,5 @@
+![Screenshot (201)](https://github.com/omarfarquek05/professional_portfolio_joy/assets/89341479/14d4b5e0-ffaf-4e99-9d6c-7533c9c55f60)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
