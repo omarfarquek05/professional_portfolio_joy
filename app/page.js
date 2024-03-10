@@ -5,6 +5,7 @@ import Filters from "@/components/search/Filters";
 import { getResources,getHeroSection } from '../lib/sanity'
 import ResourceCard from "@/components/projects/ResourceCard";
 import Contact from "@/components/contact/Contact";
+import Education from "@/components/Education/Education";
 
 export const revalidate = 100;
 
@@ -63,6 +64,8 @@ export default async function Home({ searchParams }) {
     </section>
            
       <Skills/>
+       <Education/>  
+      
       <Contact/>
     </main>
   );

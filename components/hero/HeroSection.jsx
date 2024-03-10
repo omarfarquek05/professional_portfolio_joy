@@ -9,7 +9,7 @@ import { PortableText } from "@portabletext/react";
 
 const HeroSection = ({ cvDownloadLink,author, title, authorImage, content}) => {
   return (
-    <section className="">
+    <div  className="">
       <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
 
         <div className="flex flex-col justify-center gap-2">
@@ -20,7 +20,7 @@ const HeroSection = ({ cvDownloadLink,author, title, authorImage, content}) => {
           <p className="p-regular-20 md:p-regular-24 pb-2">
            {title}
           </p>
-          <div className="p-regular-10 md:p-regular-15 tracking-normal sm:tracking-wide">
+          <div  className="p-regular-10 md:p-regular-15 tracking-normal sm:tracking-wide">
           <PortableText value={content} />
           </div>
 
@@ -35,17 +35,18 @@ const HeroSection = ({ cvDownloadLink,author, title, authorImage, content}) => {
           </div>
 
         </div>
-
+       <div className="bg-gray-100">
         <Image priority
           src={authorImage}
           alt="hero"
           width={1000}
           height={1000}
-          className="max-h-[70vh] object-contain object-center 2xl:max-h-[50vh] rounded-full 
-        bg-gradient-to-r from-gray-600 from-10% via-indigo-500 via-30%  to-indigo-400 to-90%"
+          className="max-h-[70vh] object-contain object-center 2xl:max-h-[50vh] rounded-xl 
+          shadow-lg shadow-indigo-500/50 drop-shadow-2xl backdrop-blur-xl "
         />
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
